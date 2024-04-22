@@ -3,8 +3,7 @@ public class Main {
         int a = 5, b = 3;
         a = b;
         // 출력
-        System.out.print(a);
-        System.out.print("\n");
-        System.out.print(b);
+        System.out.println(a);
+        System.out.println(b);
     }
 }
