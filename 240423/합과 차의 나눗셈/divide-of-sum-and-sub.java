@@ -6,10 +6,8 @@ public class Main {
         sc.useDelimiter(" ");
         int a = sc.nextInt();
         int b = sc.nextInt();
-        float c = (a+b);
-        float d = (a-b);
-        
-        System.out.printf("%.2f",c/d);
 
+        float result = (float) (a + b) / (a - b); 
+        System.out.printf("%.2f", result);
     }
 }
