@@ -7,6 +7,11 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
+        if (b == 0) {
+            System.out.println("Division by zero is not allowed");
+            return;
+        }
+
         float result = (float) (a + b) / (a - b); 
         System.out.printf("%.2f", result);
     }
