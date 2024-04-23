@@ -18,7 +18,7 @@ public class Main {
         }
 
         else {
-            System.out.println("Vacany");
+            System.out.println("Vacancy");
         }
     }
 }
