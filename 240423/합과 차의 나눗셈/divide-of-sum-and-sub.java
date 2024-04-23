@@ -8,9 +8,9 @@ public class Main {
         int b = sc.nextInt();
         float c = (a+b);
         float d = (a-b);
-        float k = c/d;
+        
 
-        System.out.printf("%.2f",k);
+        System.out.printf("%.2f",c/d);
 
     }
 }
