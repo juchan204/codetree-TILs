@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
 
-        if (a > 80) {
+        if (a >= 80) {
             System.out.println("pass");
         }
         else {
