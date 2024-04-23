@@ -9,7 +9,6 @@ public class Main {
         float c = (a+b);
         float d = (a-b);
         
-
         System.out.printf("%.2f",c/d);
 
     }
