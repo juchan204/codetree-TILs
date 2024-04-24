@@ -6,12 +6,15 @@ public class Main {
         int a = sc.nextInt();
 
         if (a <= 7 ) {
-            if ( a % 2 == 0)
+            if ( a % 2 == 0 && a != 2)
                 System.out.println("30");
+            else if (a == 2){
+                System.out.println("28");
+            }
             else
                 System.out.println("31");
         }
-        
+
         else {
             if ( a % 2 == 0)
                 System.out.println("31");
