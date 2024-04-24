@@ -12,7 +12,7 @@ public class Main {
             System.out.println((b + 1) / 2);
         }
         // a가 홀수일 때
-        else {
+        if (a % 2 == 1) {
             System.out.println((a + 1) / 2);
         }
 
