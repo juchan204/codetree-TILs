@@ -14,7 +14,7 @@ public class Main {
         if (a >= 9 && a <= 11)  {
             System.out.println("Fall");
         }
-        else {
+        if (a >= 1 && a <= 2 || a == 12) {
             System.out.println("Winter");
         }
     }
