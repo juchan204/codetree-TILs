@@ -8,10 +8,14 @@ public class Main {
         // a가 짝수일 때
         if (a % 2 == 0) {
             int b = a / 2;
-                if (b % 2 == 1 ) {
+
+            if ( b % 2 == 0 ) {
+                    System.out.println(b);
+                }   
+                
+            if ( b % 2 == 1 ) {
                     System.out.println((b + 1) / 2);
                 }
-            
         }
         // a가 홀수일 때
         if (a % 2 == 1) {
