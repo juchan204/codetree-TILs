@@ -5,22 +5,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         // 변수 선언
-        int a , b , c, d;
+        int a_math, a_eng;
+        int b_math, b_eng;
         
         // 입력
-        a = sc.nextInt();
-        b = sc.nextInt();
-        c = sc.nextInt();
-        d = sc.nextInt();
+        a_math = sc.nextInt();
+        a_eng = sc.nextInt();
+        b_math = sc.nextInt();
+        b_eng = sc.nextInt();
 
         // 출력
-        if( a == c) {
-            if( b > d)
-                System.out.println("A");
-            else
-                System.out.println("B");
-        }
-        else if( a > c )
+        if(a_math > b_math || (a_math == b_math && a_eng > b_eng))
             System.out.println("A");
         else
             System.out.println("B");
