@@ -23,10 +23,7 @@ public class Main {
             System.out.println("E");
         } else if (feverCount == 1) {
             System.out.println("N");
-        } else {
-            // 아무도 열이 없거나 조건을 만족하지 않는 경우
-            // 이 부분은 문제의 요구사항에 따라 다를 수 있으며, 필요에 따라 추가 또는 생략 가능
-        }
+        } 
 
     }
 }
