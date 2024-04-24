@@ -7,19 +7,16 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if (a <= b && b < c && a < c) {
+        if (a <= b && a <= c) {
             System.out.print("1 ");
-        }
-        else if (a <= c && c < b && a < b){
-            System.out.print("1 ");
-        }
-        else {
+        } else {
             System.out.print("0 ");
         }
+
+        // 두 번째 조건: 세 개의 수가 모두 같은지 확인
         if (a == b && b == c) {
             System.out.println("1");
-        }
-        else {
+        } else {
             System.out.println("0");
         }
     }
