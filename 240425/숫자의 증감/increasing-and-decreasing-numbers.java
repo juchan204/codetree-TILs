@@ -14,8 +14,8 @@ public class Main {
             }
         }
 
-        else {
-            for (int i = 1; i <= n; i--) {
+        else if ( c == 'D'){
+            for (int i = n; i >= 1; i--) {
                 System.out.println(i + " ");
             }
         }
