@@ -4,16 +4,17 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        int N = sc.nextInt();
+        // 변수 선언
+        int n;
 
-        // 출력
-        for (int i = 0; i < N; i++) {
-            int number = sc.nextInt();
-            
-            // 홀수이면서 3의 배수인 경우 출력
-            if (number % 2 != 0 && number % 3 == 0) {
-                System.out.println(number);
-            }
+        // 입력
+        n = sc.nextInt();
+
+        for(int i = 1; i <= n; i++) {
+            int a;
+            a = sc.nextInt();
+            if(a % 2 == 1 && a % 3 == 0)
+                System.out.println(a);
         }
     }
 }
