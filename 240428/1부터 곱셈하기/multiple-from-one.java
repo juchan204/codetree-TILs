@@ -6,7 +6,7 @@ public class Main {
         
         // 변수 선언
         int n;
-        int prod = 1;
+        int prod = 1; // 이 부분 중요
 
         n = sc.nextInt();
 
