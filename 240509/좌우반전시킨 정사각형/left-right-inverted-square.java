@@ -9,7 +9,7 @@ public class Main {
 
         // n칸의 정사각형에 올바른 숫자를 출력합니다.
         for(int i = 1; i <= n; i++) {
-            for(int j = 4; j > 0 ; j--) {
+            for(int j = n; j > 0 ; j--) {
                 System.out.print( i * j + " ");
             }
             System.out.println();
