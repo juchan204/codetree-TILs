@@ -8,19 +8,13 @@ public class Main {
         int n = sc.nextInt();
         char cnt = 'A';
 
-        // 알파벳을 정사각형 모양으로 출력합니다.
+        // 알파벳을 삼각형 모양으로 출력합니다.
         for(int i = 0; i < n; i++) {
-            for(int j = 0; j < i + 1; j++) {
-                if ( cnt > 'Z' ){
+            for(int j = 0; j <= i; j++) {
+                System.out.print(cnt);
+                cnt++;
+                if(cnt > 'Z')
                     cnt = 'A';
-                    System.out.print(cnt);
-                    cnt++;
-                }
-                else {
-                    System.out.print(cnt);
-                    cnt++;
-                }
-                    
             }
             System.out.println();
         }
