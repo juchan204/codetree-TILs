@@ -11,8 +11,16 @@ public class Main {
         // 알파벳을 정사각형 모양으로 출력합니다.
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < i + 1; j++) {
-                System.out.print(cnt);
-                cnt++;
+                if ( cnt > 'Z' ){
+                    cnt = 'A';
+                    System.out.print(cnt);
+                    cnt++;
+                }
+                else {
+                    System.out.print(cnt);
+                    cnt++;
+                }
+                    
             }
             System.out.println();
         }
