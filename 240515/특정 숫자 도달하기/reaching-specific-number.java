@@ -8,16 +8,17 @@ public class Main {
 
         int sum = 0;
         int cnt = 0;
-        
+
+        for(int i = 0; i < 10; i++){
+            arr[i] = sc.nextInt();
+        }
+
         for (int i = 0; i < 9; i++) {
-            arr [i] =sc.nextInt();
             if (arr[i] >= 250) {
                 break;
             }
-            else {
-                sum += arr[i];
-                cnt++ ;
-            }
+            sum += arr[i];
+            cnt++ ;
         }
         //실수 나눗셈 표현
         System.out.printf("%d %.1f",sum,(double)sum/cnt);
