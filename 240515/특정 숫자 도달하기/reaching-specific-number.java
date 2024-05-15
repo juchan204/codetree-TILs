@@ -15,12 +15,15 @@ public class Main {
         }
 
         // 10개의 정수 중 250 이상의 수가 나올 때 까지의 수의 합계와 개수를 구합니다.
-        for(int i = 0; i < 10; i++) {
-            if(arr[i] >= 250) 
-                break;
-            sum += arr[i];
-            cnt++;
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] >= 250) {
+            break;
         }
+        else {
+            sum += arr[i];
+            cnt++ ;
+        }
+    }
         
         // 평균을 구합니다.
         double avg = (double)sum / cnt;
