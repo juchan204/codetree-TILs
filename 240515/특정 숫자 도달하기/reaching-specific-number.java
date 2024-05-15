@@ -13,12 +13,14 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < 9; i++) {
-            if (arr[i] >= 250) {
+        for (int i = 0; i < 10; i++) {
+            if (arr[i] > 250) {
                 break;
             }
-            sum += arr[i];
-            cnt++ ;
+            else {
+                sum += arr[i];
+                cnt++ ;
+            }
         }
         //실수 나눗셈 표현
         System.out.printf("%d %.1f",sum,(double)sum/cnt);
