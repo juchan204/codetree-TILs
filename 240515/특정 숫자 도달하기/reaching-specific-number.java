@@ -23,10 +23,7 @@ public class Main {
             cnt++ ;
         }
         
-        // 평균을 구합니다.
-        double avg = (double)sum / cnt;
-
-        // 출력
-        System.out.printf("%d %.1f", sum, avg);
+        //실수 나눗셈 표현
+        System.out.printf("%d %.1f",sum,(double)sum/cnt);
     }
 }
