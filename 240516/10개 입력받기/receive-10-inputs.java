@@ -17,8 +17,7 @@ public class Main {
             cnt++;
 
         }
-
-        // 0이 입력되기 전까지의 수를 반대 순서로 출력합니다.
+    
         for(int i = 0; i < cnt; i++) {
             sum += arr[i];
         }
