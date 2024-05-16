@@ -20,7 +20,7 @@ public class Main {
 
         if (avg >= 4.0)
             System.out.print("Perfect");
-        if (avg >= 3.0)
+        else if (avg >= 3.0)
             System.out.print("Good");
         else
             System.out.print("Poor");
