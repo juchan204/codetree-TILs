@@ -17,8 +17,6 @@ public class Main {
             }
         }
             
-        
-        // 배열의 원소들을 출력하다가 5의 배수가 2번 나오면 출력을 멈춤
         for(int i = 0; i < cnt -1; i++) {
             
             if (arr[i] % 2 == 1 ){
