@@ -2,37 +2,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+
+        // 배열 선언
+        int[] arr = new int[10];
+        int cnt = 0;
+
+        // 정수 한 개를 입력받아 배열의 첫 인덱스에 저장
+        arr[0] = sc.nextInt();
         
-        // 사용자로부터 정수 입력받기
-        int input = scanner.nextInt();
+        // 입력받은 정수의 배수를 배열에 저장
+        for(int i = 1; i < 10; i++)
+            arr[i] = arr[i - 1] + arr[0];
         
-        // 조건을 만족할 때까지 배수를 저장할 배열
-        int[] multiples = new int[100]; // 임의로 크기를 설정. 필요에 따라 조정 가능
-        
-        int count = 0; // 배열에 저장된 요소의 수
-        int fiveMultiples = 0; // 5의 배수가 몇 번 출력되었는지 추적
-        
-        for (int i = 1; fiveMultiples < 2; i++) {
-            int multiple = input * i; // 현재 숫자의 배수를 계산
-            
-            // 5의 배수가 나오면 fiveMultiples 증가
-            if (multiple % 5 == 0) {
-                fiveMultiples++;
-            }
-            
-            // 조건을 만족하지 않으면 반복 종료
-            if (fiveMultiples > 2) {
+        // 배열의 원소들을 출력하다가 5의 배수가 2번 나오면 출력을 멈춤
+        for(int i = 0; i < 10; i++) {
+            System.out.print(arr[i] + " ");
+            if(arr[i] % 5 == 0)
+                cnt++;
+            if(cnt >= 2)
                 break;
-            }
-            
-            // 배수를 배열에 저장
-            multiples[count++] = multiple;
-        }
-        
-        // 결과 출력
-        for (int i = 0; i < count; i++) {
-            System.out.print(multiples[i] + " ");
         }
     }
 }
