@@ -1,34 +1,27 @@
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // 입력 받기
+        // 변수 입력받기
         int a = sc.nextInt();
         int b = sc.nextInt();
+        int[] countArr = new int[10];
+        int ans = 0;
 
-        // 나머지 등장 횟수를 저장할 Map
-        Map<Integer, Integer> remainderCountMap = new HashMap<>();
-
-        // 나눗셈을 반복하며 나머지 계산
-        while (a > 1) {
-            int remainder = a % b;
-            a = a / b;
-
-            // 나머지 등장 횟수 증가
-            remainderCountMap.put(remainder, remainderCountMap.getOrDefault(remainder, 0) + 1);
+        // a가 1 이하가 될 때 까지 나누면서 나머지를 count배열에 저장하기
+        while(a > 1) {
+            countArr[a % b]++;
+            a /= b;
+        }
+        
+        // 나머지가 나온 횟수를 구해 정답 구하기
+        for(int i = 0; i < b; i++) {
+            ans += countArr[i] * countArr[i];
         }
 
-        // 각 나머지 등장 횟수의 제곱의 합 계산
-        int sumOfSquares = 0;
-        for (int count : remainderCountMap.values()) {
-            sumOfSquares += count * count;
-        }
-
-        // 결과 출력
-        System.out.println(sumOfSquares);
+        // 출력
+        System.out.print(ans);
     }
 }
