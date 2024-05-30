@@ -16,12 +16,12 @@ public class Main {
         int secondMaxNumber = Integer.MIN_VALUE;
 
         for (int i = 0; i < n; i++) {
-            if (numbers[i] > maxNumber) {
+            if (numbers[i] >= maxNumber) {
                 // 새로운 최댓값을 찾았을 때, 현재의 최댓값을 두 번째로 큰 수로 업데이트하고
                 // 새로운 최댓값으로 업데이트
                 secondMaxNumber = maxNumber;
                 maxNumber = numbers[i];
-            } else if (numbers[i] > secondMaxNumber && numbers[i] < maxNumber) {
+            } else if (numbers[i] >= secondMaxNumber && numbers[i] <= maxNumber) {
                 // 새로운 두 번째로 큰 수를 찾았을 때 업데이트
                 // 이 조건은 첫 번째로 큰 수와 동일한 값은 제외
                 secondMaxNumber = numbers[i];
