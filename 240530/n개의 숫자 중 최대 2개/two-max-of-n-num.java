@@ -12,7 +12,7 @@ public class Main {
         }
 
         // 첫 번째로 큰 수와 두 번째로 큰 수를 찾기 위한 변수 초기화
-        int maxNumber = Integer.MIN_VALUE;
+        int maxNumber = numbers[0];
         int secondMaxNumber = Integer.MIN_VALUE;
 
         for (int i = 0; i < n; i++) {
@@ -21,7 +21,7 @@ public class Main {
                 // 새로운 최댓값으로 업데이트
                 secondMaxNumber = maxNumber;
                 maxNumber = numbers[i];
-            } else if (numbers[i] >= secondMaxNumber && numbers[i] <= maxNumber) {
+            } else if (numbers[i] > secondMaxNumber && numbers[i] <= maxNumber) {
                 // 새로운 두 번째로 큰 수를 찾았을 때 업데이트
                 // 이 조건은 첫 번째로 큰 수와 동일한 값은 제외
                 secondMaxNumber = numbers[i];
