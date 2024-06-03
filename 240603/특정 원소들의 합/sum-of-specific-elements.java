@@ -11,7 +11,7 @@ public class Main {
                 arr2d[i][j] = sc.nextInt();
             }
         }
-
+        // j가 i까지 for문을 도는 것 중요포인트
         int sum = 0;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j <= i; j++) {
