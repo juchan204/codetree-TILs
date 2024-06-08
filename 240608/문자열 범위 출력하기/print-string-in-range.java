@@ -6,7 +6,8 @@ public class Main {
 
         String str = sc.nextLine();
 
-        for ( int i = 2 ; i <= 9 ){
-            System.out.println(str.charAt(i));
+        for ( int i = 2 ; i <= 9; i++ ){
+            System.out.print(str.charAt(i));
         }
+    }
 }
