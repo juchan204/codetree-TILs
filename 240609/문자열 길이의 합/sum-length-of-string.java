@@ -6,7 +6,6 @@ public class Main {
         int n = sc.nextInt();
         int cnt = 0;
         int lenAll = 0;
-        char a = 'a';
 
         String[] arr = new String[n];
         for(int i = 0; i < n; i++) {
@@ -17,7 +16,7 @@ public class Main {
             lenAll += len;
         }
         for(int i = 0; i < n; i++)
-            if(arr[i].charAt(0) == a) {
+            if(arr[i].charAt(0) == 'a') {
                 cnt++;
             }
         System.out.println(lenAll + " " + cnt);
