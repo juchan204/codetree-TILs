@@ -9,10 +9,8 @@ public class Main {
         // 정수 n을 입력받음
         int n = sc.nextInt();
 
-        // str의 길이가 n보다 작으면 런타임 에러가 발생할 수 있으므로 조건을 추가
         if (n > str.length()) {
-            System.out.println("Error: n is larger than the length of the string.");
-            return;
+            n = str.length();
         }
 
         // 문자열의 끝에서부터 n개의 문자를 출력
