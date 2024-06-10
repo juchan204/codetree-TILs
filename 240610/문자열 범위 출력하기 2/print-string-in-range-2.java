@@ -9,6 +9,7 @@ public class Main {
         // 정수 n을 입력받음
         int n = sc.nextInt();
 
+        // 이 부분이 중요
         if (n > str.length()) {
             n = str.length();
         }
