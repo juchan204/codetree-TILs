@@ -8,7 +8,9 @@ public class Main {
 
         int n = sc.nextInt();
 
-        for(int i = str.length() - 1; i >= str.length() - n ; i--){
+        int len = str.length();
+
+        for(int i = len - 1; i >= len - n ; i--){
             System.out.print(str.charAt(i));
         }
             
