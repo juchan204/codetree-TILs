@@ -10,14 +10,15 @@ public class Main {
         // 두 번째 줄에 문자열 B 입력
         String B = sc.nextLine();
         
-        // 문자열 B의 길이는 2로 가정
         int count = 0;
-        int index = 0;
+        int lenA = A.length();
+        int lenB = B.length();
         
-        // 문자열 A에서 문자열 B를 찾기
-        while ((index = A.indexOf(B, index)) != -1) {
-            count++;
-            index += B.length();  // 찾은 위치 이후부터 다시 검색
+        // 문자열 A를 순회하며 문자열 B가 일치하는지 확인
+        for (int i = 0; i <= lenA - lenB; i++) {
+            if (A.substring(i, i + lenB).equals(B)) {
+                count++;
+            }
         }
         
         // 결과 출력
