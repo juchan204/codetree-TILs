@@ -22,7 +22,7 @@ public class Main {
         }
 
         for (int i = 0; i < length - 1; i++) {
-            if (str.charAt(i) == 'e' && str.charAt(i + 1) == 'e') {
+            if (str.charAt(i) == 'e' && str.charAt(i + 1) == 'b') {
                 cnt1++;
             }
         }
