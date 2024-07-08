@@ -1,18 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        String input = "2021.Leebros.Hello";
-        String result = getUppercaseAlphabets(input);
-        System.out.println(result);
-    }
+        Scanner sc = new Scanner(System.in);
 
-    public static String getUppercaseAlphabets(String input) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < input.length(); i++) {
-            char c = input.charAt(i);
+        String inputStr = sc.nextLine();
+        StringBuilder outputStr = new StringBuilder();
+
+        for (char c : inputStr.toCharArray()) {
             if (Character.isLetter(c)) {
-                sb.append(Character.toUpperCase(c));
+                outputStr.append(Character.toUpperCase(c));
             }
         }
-        return sb.toString();
+
+        System.out.println(outputStr.toString());
     }
 }
