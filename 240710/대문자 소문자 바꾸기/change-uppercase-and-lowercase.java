@@ -2,25 +2,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
+        Scanner sc = new Scanner(System.in);
+
+        // 문자열을 정의합니다.
+        String str;
         
-        StringBuilder result = new StringBuilder();
+        // 문자열을 입력받습니다.
+        str = sc.next();
         
-        for (int i = 0; i < input.length(); i++) {
-            char ch = input.charAt(i);
-            if (Character.isUpperCase(ch)) {
-                // 대문자인 경우 소문자로 변환하여 추가
-                result.append(Character.toLowerCase(ch));
-            } else if (Character.isLowerCase(ch)) {
-                // 소문자인 경우 대문자로 변환하여 추가
-                result.append(Character.toUpperCase(ch));
-            } else {
-                // 알파벳이 아닌 경우 그대로 추가 (예를 들어 숫자나 기호)
-                result.append(ch);
+        // 문자열의 길이를 구합니다.
+        int len = str.length();
+
+        // 소문자와 대문자를 바꾸어 출력합니다.
+        for(int i = 0; i < len; i++) {
+            if(str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') {
+                System.out.print((char)(str.charAt(i) - 'A' + 'a'));
+            }
+            else {
+                System.out.print((char)(str.charAt(i) - 'a' + 'A'));
             }
         }
-        
-        System.out.println(result.toString());
     }
 }
