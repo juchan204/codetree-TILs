@@ -21,7 +21,7 @@ public class Main {
         String sumStr = String.valueOf(sum);
         
         // 합의 결과를 좌측으로 한 칸 민다 (첫 번째 문자 제거하고 마지막에 '0' 추가)
-        String shiftedResult = sumStr.substring(1) + "0";
+        String shiftedResult = sumStr.substring(1) + sumStr.charAt(0);
         
         // 결과 출력
         System.out.println(shiftedResult);
