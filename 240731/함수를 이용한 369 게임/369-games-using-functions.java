@@ -1,9 +1,13 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // 입력 예시: 22 33
-        int a = 22;
-        int b = 33;
-
+        Scanner scanner = new Scanner(System.in);
+        
+        // 입력 받기
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        
         // 조건을 만족하는 숫자의 개수를 계산
         int count = countNumbersWith369OrMultipleOf3(a, b);
 
